@@ -11,6 +11,8 @@ MEMO帳アプリ（男帳アプリ）
 
 デプロイしている場合はURLを記入（任意）
 
+https://kyaamamoto.github.io/memo/
+
 ## ④作ったアプリケーション用のIDまたはPasswordがある場合
 
 - ID: なし
