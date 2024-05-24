@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>男帳アプリ</title>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="wrap">
+
+        <div class="block1">
+            <h1>男帳アプリ</h1>
+            <h2>＜使い方＞</h2>
+            <p>このアプリは、さまざまなシチュエーションで異性と出会った際に記録するアプリです。<br>
+            職場、得意先、合コンなどの場で出会った男性を記憶ではなく、記録するために活用します。<br>
+            出会った人の名前や特徴などを記録しておき、さまざまな活動に役立てましょう！
+            </p>
+        </div>
+
+        <div class="block2">
+            日付：<input type="date" id="date">
+            名前：<input type="text" id="namae">
+            <!-- 画像ファイルを選択するための入力要素を設定します。
+         accept属性により、ファイル選択ダイアログで画像ファイルのみが表示されます。
+         multiple属性により、ユーザーが複数のファイルを選択できます。
+         onchange属性により、選択したファイルが変更されるたびに指定したJavaScript関数が呼び出されます。 -->
+            写真: <input accept="image/*" type="file" multiple="multiple" onchange="preview(this)" id="gazou">
+            <div id="img"></div>
+            場所・特徴：<textarea name="tokucho" id="tokucho" cols="30" rows="2"></textarea>
+            評価メモ：<textarea name="memo" id="memo" cols="30" rows="2"></textarea>
+        </div>
+
+        <div class="block3">
+            <button id="save">保存</button>
+            <button id="clear">全削除</button>
+        </div>
+
+        <ul id="list">
+            <!-- ここにデータが挿入される -->
+        </ul>
+    
+    
+    </div>
+
+
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
